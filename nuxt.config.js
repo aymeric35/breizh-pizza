@@ -1,4 +1,9 @@
 export default {
+  server: {
+    host: '0.0.0.0', // par défaut: localhost
+    port: 8000
+  },
+
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -9,7 +14,7 @@ export default {
   head: {
     title: 'breizh-pizza',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'fr'
     },
     meta: [
       { charset: 'utf-8' },
@@ -18,7 +23,8 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito+Sans:wght@600&display=swap' }
     ]
   },
 
@@ -27,9 +33,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '~/plugins/vue-lazyload.js'
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -39,7 +43,18 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
       'nuxt-windicss',
+      'nuxt-lazysizes'
   ],
+
+  lazySizes: {
+    extendAssetUrls: {
+      img: ['src', 'srcset', 'data-src', 'data-srcset'],
+      source: ['src', 'srcset', 'data-src', 'data-srcset'],
+
+      // custom component
+      AppImage: ['source-2x-url', 'source-hd-url', 'image-url'],
+    },
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -52,5 +67,16 @@ export default {
         ['@babel/plugin-proposal-private-property-in-object', { loose: true }]
       ],
     },
+  },
+
+  loadingIndicator: {
+    name: 'folding-cube',
+    color: '#F97316',
+    background: '#181818'
+  },
+
+  loading: {
+    color: '#F97316',
+    height: '5px'
   }
 }
