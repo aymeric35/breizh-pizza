@@ -113,6 +113,9 @@ export default {
 </script>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 /* lazyload */
 img.lazyloading {
   display: flex;
