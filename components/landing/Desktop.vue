@@ -1,5 +1,5 @@
 <template>
-  <section class="h-full -mt-16 bg-cover hidden md:block bg-body-pattern-2x bg-cover xl:-mt-24">
+  <section class="hidden h-full -mt-16 bg-cover lg:block bg-body-pattern-2x xl:-mt-24">
     <div class="container flex items-center justify-center h-full pt-12 space-x-30">
       <div class="w-1/2 space-y-3">
         <h1

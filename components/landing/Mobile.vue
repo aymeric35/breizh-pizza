@@ -1,5 +1,5 @@
 <template>
-  <section class="h-full -mt-12 bg-cover bg-body-pattern md:hidden">
+  <section class="h-full -mt-12 bg-cover bg-body-pattern lg:hidden">
     <div class="container flex flex-col h-full pt-12">
       <h1
         class="mt-auto text-4xl text-center text-gray-50 font-heading sm:text-6xl"
