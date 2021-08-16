@@ -9,6 +9,7 @@ export default defineConfig({
             orange: colors.orange,
             gray: colors.trueGray,
             green: colors.green,
+            dark: colors.dark,
             transparent: 'transparent'
         },
         container: {
@@ -19,7 +20,8 @@ export default defineConfig({
         },
         extend: {
             screens: {
-                'x-sm': { 'raw': '(min-height: 500px) and (max-height: 1024px) and (min-width:300px) and (max-width:640px)' }
+                'x-sm': { 'raw': '(min-height: 500px) and (max-height: 1024px) and (min-width:300px) and (max-width:640px)' },
+                'ret': '2000px'
             },
             fontFamily: {
                 'heading': [
