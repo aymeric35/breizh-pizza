@@ -1,8 +1,8 @@
 <template>
   <section class="bg-cover bg-body-pattern-2x pt-12 pb-calc-card xl:pt-24">
-    <div class="px-4 pt-20">
+    <div class="container pt-20">
       <div
-        class="container bg-no-repeat bg-card-gradient bg-pizza-pattern-position rounded-xl shadow-md -mb-[10%] ml-0 py-5 text-gray-50 w-4/6 z-40 relative p-6 lg:p-8 xl:w-1/2 xl:ml-auto xl:-mb-[5%] 2xl:w-4/10"
+        class="container bg-no-repeat bg-card-gradient bg-pizza-pattern-position rounded-xl shadow-md -mb-[10%] ml-0 py-5 text-gray-50 w-4/6 z-40 relative p-6 lg:p-8 xl:w-1/2 xl:ml-auto xl:-mb-[5%]"
       >
         <h2 class="font-font-heading text-2xl">Lorem Ipsum</h2>
         <p class="font-body">
@@ -27,12 +27,12 @@
           />
           <img
             :data-src="smM"
-            class="object-cover shadow-md rounded-md lazyload image-rendering-opt mx-auto w-5/6"
+            class="object-cover shadow-md rounded-md lazyload image-rendering-opt mx-auto "
           />
         </picture>
       </figure>
     </div>
-    <div class="px-4 pt-20">
+    <div class="container pt-40">
       <figure class="mr-auto w-1/2 static">
         <picture>
           <source
@@ -47,12 +47,12 @@
           />
           <img
             :data-src="smF"
-            class="object-cover shadow-md rounded-md lazyload image-rendering-opt mx-auto w-5/6"
+            class="object-cover shadow-md rounded-md lazyload image-rendering-opt mx-auto "
           />
         </picture>
       </figure>
       <div
-        class="container bg-no-repeat bg-card-gradient bg-pizza-pattern-position rounded-xl shadow-md -mt-[10%] mr-0 py-5 text-gray-50 w-4/6 z-40 relative p-6 lg:p-8 xl:w-1/2 xl:mr-auto xl:-mt-[5%] 2xl:w-4/10"
+        class="container bg-no-repeat bg-card-gradient bg-pizza-pattern-position rounded-xl shadow-md -mt-[10%] mr-0 py-5 text-gray-50 w-4/6 z-40 relative p-6 lg:p-8 xl:w-1/2 xl:mr-auto xl:-mt-[5%]"
       >
         <h2 class="font-font-heading text-2xl">Lorem Ipsum</h2>
         <p class="font-body">
