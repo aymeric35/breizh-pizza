@@ -5,53 +5,71 @@
       <LandingMobile></LandingMobile>
       <LandingDesktop></LandingDesktop>
     </vue100vh>
-    <section
-      class="relative bg-gray-900 lg:h-screen"
-    >
-      <div
-        class="container flex flex-col items-center justify-center h-full space-y-8 py-12 lg:justify-end"
+    <section class="bg-gray-900 relative md:flex md:gap-10 md:items-center 2xl:pb-24">
+      <figure
+        class="container pt-12 md:flex md:max-w-full md:pt-0 md:pr-0 md:pl-0 md:gap-10"
       >
-        <figure class="lg:absolute lg:top-0 lg:left-0">
-          <picture>
-            <source
-              :data-srcset="pizzaPreparation.ret"
-              media="(min-width:2000px)"
-              type="image/jpg"
-            />
-            <source
-              :data-srcset="pizzaPreparation.lg"
-              media="(min-width:640px)"
-              type="image/jpg"
-            />
-            <img
-              :data-src="pizzaPreparation.sm"
-              class="shadow-md lg:w-4/6 lazyload rounded-xl image-rendering-opt lg:rounded-bl-[20%]"
-            />
-          </picture>
-        </figure>
-        <div class="text-gray-50">
-          <h2 class="pb-3 text-3xl font-heading">
-            Lorem ipsum <span class="text-orange-500">coge</span>
-          </h2>
-          <p class="pb-5 font-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            tincidunt leo quis lacus ultricies sollicitudin. Ut blandit, tortor
-            nec pulvinar aliquam, velit est sollicitudin metus, laoreet rutrum
-            est enim ut nisl. Mauris interdum orci auctor, mollis justo in,
-            luctus ipsum. Sed accumsan ultrices tellus, nec placerat augue
-            interdum ut.
-          </p>
-          <button
-            type="button"
-            class="px-6 py-2 text-lg text-green-500 rounded-lg shadow-md ring ring-green-500 text-gray-50 font-body focus:outline-none"
-          >
-            <NuxtLink to="/menu">Voir le menu</NuxtLink>
-          </button>
-        </div>
+        <picture>
+          <source
+            :data-srcset="pizzaPreparation.ret"
+            media="(min-width:2000px)"
+            type="image/jpg"
+          />
+          <source
+            :data-srcset="pizzaPreparation.lg"
+            media="(min-width:640px)"
+            type="image/jpg"
+          />
+          <img
+            :data-src="pizzaPreparation.sm"
+            class="rounded-xl shadow-md w-screen lazyload image-rendering-opt md:rounded-none md:object-cover md:rounded-br-[5rem] md:mb-20 lg:h-screen xl:object-right-bottom ret:h-7xl"
+          />
+        </picture>
+      </figure>
+      <div
+        class="container flex flex-col h-full py-12 text-gray-50 items-start justify-center sm:py-20 lg:px-20"
+      >
+        <h2 class="font-heading pb-3 text-3xl">
+          Lorem ipsum <span class="text-orange-500">coge</span>
+        </h2>
+        <p class="font-body pb-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          tincidunt leo quis lacus ultricies sollicitudin. Ut blandit, tortor
+          nec pulvinar aliquam, velit est sollicitudin metus, laoreet rutrum est
+          enim ut nisl. Mauris interdum orci auctor, mollis justo in, luctus
+          ipsum. Sed accumsan ultrices tellus, nec placerat augue interdum ut.
+        </p>
+        <button
+          type="button"
+          class="rounded-lg font-body shadow-md ring text-lg py-2 px-6 ring-green-500 text-green-500 text-gray-50 focus:outline-none"
+        >
+          <NuxtLink to="/menu">Voir le menu</NuxtLink>
+        </button>
       </div>
-      <CardItem :sm="pizzaMains.sm" :lg="pizzaMains.lg" :ret="pizzaMains.ret"></CardItem>
-      <CardItem :sm="pizzaFour.sm" :lg="pizzaFour.lg" :ret="pizzaFour.ret"></CardItem>
     </section>
+    <MatchMedia v-slot="{ matches }" query="(max-width: 767px)">
+      <CardItemMobile
+        v-if="matches"
+        :sm="pizzaMains.sm"
+        :lg="pizzaMains.lg"
+        :ret="pizzaMains.ret"
+      ></CardItemMobile>
+      <CardItemMobile
+        v-if="matches"
+        :sm="pizzaFour.sm"
+        :lg="pizzaFour.lg"
+        :ret="pizzaFour.ret"
+      ></CardItemMobile>
+      <CardItemDesktop
+        v-else
+        :sm-m="pizzaMains.sm"
+        :lg-m="pizzaMains.lg"
+        :ret-m="pizzaMains.ret"
+        :sm-f="pizzaFour.sm"
+        :lg-f="pizzaFour.lg"
+        :ret-f="pizzaFour.ret"
+      ></CardItemDesktop>
+    </MatchMedia>
     <TheCTA></TheCTA>
     <TheFooter></TheFooter>
   </div>
@@ -59,6 +77,7 @@
 
 <script>
 import vue100vh from 'vue-100vh'
+import { MatchMedia } from 'vue-component-media-queries'
 import PizzaPrepM from '~/assets/images/homepage/pizza-preparation-m.jpg'
 import PizzaPrepHD from '~/assets/images/homepage/pizza-preparation-hd.jpg'
 import PizzaPrep2x from '~/assets/images/homepage/pizza-preparation-x2.jpg'
@@ -70,7 +89,7 @@ import PizzaFourHD from '~/assets/images/homepage/pizza-four-hd.jpg'
 import PizzaFour2x from '~/assets/images/homepage/pizza-four-x2.jpg'
 
 export default {
-  components: { vue100vh },
+  components: { vue100vh, MatchMedia },
   data() {
     return {
       pizzaPreparation: {
