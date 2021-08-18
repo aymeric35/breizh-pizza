@@ -53,3 +53,9 @@
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  transition: 'home',
+}
+</script>

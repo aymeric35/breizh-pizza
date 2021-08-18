@@ -43,6 +43,7 @@ import pizzaLg from '~/assets/images/menu/menu-lg.jpg'
 import pizzaRet from '~/assets/images/menu/menu-ret.jpg'
 
 export default {
+  transition: 'home',
   data() {
     return {
       menu: {

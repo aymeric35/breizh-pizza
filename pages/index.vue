@@ -5,7 +5,9 @@
       <LandingMobile></LandingMobile>
       <LandingDesktop></LandingDesktop>
     </vue100vh>
-    <section class="bg-gray-900 relative md:flex md:gap-10 md:items-center 2xl:pb-24">
+    <section
+      class="bg-gray-900 relative md:flex md:gap-10 md:items-center 2xl:pb-24"
+    >
       <figure
         class="container pt-12 md:flex md:max-w-full md:pt-0 md:pr-0 md:pl-0 md:gap-10"
       >
@@ -90,6 +92,7 @@ import PizzaFour2x from '~/assets/images/homepage/pizza-four-x2.jpg'
 
 export default {
   components: { vue100vh, MatchMedia },
+  transition: 'home',
   data() {
     return {
       pizzaPreparation: {
@@ -115,6 +118,16 @@ export default {
 <style>
 html {
   scroll-behavior: smooth;
+}
+
+.home-enter-active,
+.home-leave-active {
+  transition: all 0.5s ease;
+}
+.home-enter,
+.home-leave-active {
+  opacity: 0;
+  transform: scale(0.9);
 }
 /* lazyload */
 img.lazyloading {

@@ -17,6 +17,7 @@ import vue100vh from 'vue-100vh'
 import Divider from '~/assets/images/menu/divider.svg'
 export default {
   components: { vue100vh },
+  transition: 'home',
   data() {
     return {
       divider: Divider,
