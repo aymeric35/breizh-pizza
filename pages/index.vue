@@ -129,11 +129,21 @@ body {
 .home-leave-active {
   transition: all 0.4s ease;
 }
+
 .home-enter,
 .home-leave-active {
   opacity: 0;
-  transform: scale(0.9);
+  transform: translateX(-100%);
 }
+
+@media (min-width: 768px) {
+  .home-enter,
+  .home-leave-active {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
 /* lazyload */
 img.lazyloading {
   display: flex;
