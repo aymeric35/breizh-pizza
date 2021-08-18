@@ -120,9 +120,14 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgba(23, 23, 23, var(--tw-bg-opacity));
+}
+
 .home-enter-active,
 .home-leave-active {
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
 }
 .home-enter,
 .home-leave-active {
