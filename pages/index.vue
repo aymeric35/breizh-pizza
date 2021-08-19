@@ -13,18 +13,18 @@
       >
         <picture>
           <source
-            :data-srcset="pizzaPreparation.ret"
+            :srcset="pizzaPreparation.ret"
             media="(min-width:2000px)"
             type="image/jpg"
           />
           <source
-            :data-srcset="pizzaPreparation.lg"
+            :srcset="pizzaPreparation.lg"
             media="(min-width:640px)"
             type="image/jpg"
           />
           <img
-            :data-src="pizzaPreparation.sm"
-            class="rounded-xl shadow-md w-screen lazyload image-rendering-opt md:rounded-none md:object-cover md:rounded-br-[5rem] md:mb-20 lg:h-screen xl:object-right-bottom ret:h-7xl"
+            :src="pizzaPreparation.sm"
+            class="rounded-xl shadow-md w-screen image-rendering-opt md:rounded-none md:object-cover md:rounded-br-[5rem] md:mb-20 lg:h-screen xl:object-right-bottom ret:h-7xl"
           />
         </picture>
       </figure>
@@ -41,12 +41,9 @@
           enim ut nisl. Mauris interdum orci auctor, mollis justo in, luctus
           ipsum. Sed accumsan ultrices tellus, nec placerat augue interdum ut.
         </p>
-        <button
-          type="button"
-          class="rounded-lg font-body shadow-md ring text-lg py-2 px-6 ring-green-500 text-green-500 text-gray-50 focus:outline-none"
-        >
-          <NuxtLink to="/menu">Voir le menu</NuxtLink>
-        </button>
+        <SecondaryButton label="Voir le menu" destination="/menu">
+          <ButtonIconMenu></ButtonIconMenu>
+        </SecondaryButton>
       </div>
     </section>
     <MatchMedia v-slot="{ matches }" query="(max-width: 767px)">
@@ -141,44 +138,6 @@ body {
   .home-leave-active {
     opacity: 0;
     transform: scale(0.9);
-  }
-}
-
-/* lazyload */
-img.lazyloading {
-  display: flex;
-  width: 3.5em;
-  height: 3.5em;
-  border: 3px solid transparent;
-  border-top-color: #f97316;
-  border-bottom-color: #f97316;
-  border-radius: 50%;
-  animation: spin 1.5s linear infinite;
-}
-
-img.lazyloading:before {
-  content: '';
-  display: block;
-  margin: auto;
-  width: 0.75em;
-  height: 0.75em;
-  border: 3px solid #f97316;
-  border-radius: 50%;
-  animation: pulse 1s alternate ease-in-out infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes pulse {
-  from {
-    transform: scale(0.5);
-  }
-  to {
-    transform: scale(1);
   }
 }
 </style>
