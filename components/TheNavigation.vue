@@ -14,7 +14,7 @@
           <NuxtLink to="/contact" @click.native="clearScroll">Contact</NuxtLink>
         </li>
         <li
-          class="hidden lg:px-5 lg:py-0.5 lg:block lg:bg-orange-500 lg:rounded-full"
+          class="hidden lg:px-5 lg:py-0.5 lg:block lg:bg-orange-500 lg:rounded-full lg:hover:bg-orange-600 lg:transition-colors lg:duration-300"
         >
           <NuxtLink id="contact" to="/contact" @click.native="clearScroll"
             >Commander</NuxtLink
