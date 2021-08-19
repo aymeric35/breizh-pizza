@@ -9,19 +9,19 @@
       <figure class="mt-auto">
         <picture>
           <source
-            :data-srcset="webp.pizza.lg"
+            :srcset="webp.pizza.lg"
             media="(min-width:640px)"
             type="image/webp"
           />
           <source
-            :data-srcset="png.pizza.lg"
+            :srcset="png.pizza.lg"
             media="(min-width:640px)"
             type="image/png"
           />
-          <source :data-srcset="webp.pizza.sm" type="image/webp" />
+          <source :srcset="webp.pizza.sm" type="image/webp" />
           <img
-            :data-src="png.pizza.sm"
-            class="w-full mx-auto lazyload x-sm:w-8/10 sm:w-1/2 image-rendering-opt"
+            :src="png.pizza.sm"
+            class="w-full mx-auto x-sm:w-8/10 sm:w-1/2 image-rendering-opt"
           />
         </picture>
       </figure>
