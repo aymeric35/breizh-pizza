@@ -43,18 +43,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
       'nuxt-windicss',
-      'nuxt-lazysizes'
   ],
-
-  lazySizes: {
-    extendAssetUrls: {
-      img: ['src', 'srcset', 'data-src', 'data-srcset'],
-      source: ['src', 'srcset', 'data-src', 'data-srcset'],
-
-      // custom component
-      AppImage: ['source-2x-url', 'source-hd-url', 'image-url'],
-    },
-  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
