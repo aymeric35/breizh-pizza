@@ -4,18 +4,19 @@
       <figure class="top-0 right-0 left-0 absolute">
         <picture>
           <source
-            :data-srcset="ret"
+            :srcset="ret"
             media="(min-width:2000px)"
             type="image/jpg"
           />
           <source
-            :data-srcset="lg"
+            :srcset="lg"
             media="(min-width:640px)"
             type="image/jpg"
           />
           <img
-            :data-src="sm"
-            class="shadow-md lazyload image-rendering-opt object-cover"
+            :src="sm"
+            loading="lazy"
+            class="shadow-md image-rendering-opt object-cover"
           />
         </picture>
       </figure>

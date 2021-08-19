@@ -16,18 +16,19 @@
       <figure class="ml-auto w-1/2 static">
         <picture>
           <source
-            :data-srcset="retM"
+            :srcset="retM"
             media="(min-width:2000px)"
             type="image/jpg"
           />
           <source
-            :data-srcset="lgM"
+            :srcset="lgM"
             media="(min-width:640px)"
             type="image/jpg"
           />
           <img
-            :data-src="smM"
-            class="object-cover shadow-md rounded-md lazyload image-rendering-opt mx-auto "
+            :src="smM"
+            loading="lazy"
+            class="object-cover shadow-md rounded-md image-rendering-opt mx-auto "
           />
         </picture>
       </figure>
@@ -36,18 +37,19 @@
       <figure class="mr-auto w-1/2 static">
         <picture>
           <source
-            :data-srcset="retF"
+            :srcset="retF"
             media="(min-width:2000px)"
             type="image/jpg"
           />
           <source
-            :data-srcset="lgF"
+            :srcset="lgF"
             media="(min-width:640px)"
             type="image/jpg"
           />
           <img
-            :data-src="smF"
-            class="object-cover shadow-md rounded-md lazyload image-rendering-opt mx-auto "
+            :src="smF"
+            loading="lazy"
+            class="object-cover shadow-md rounded-md image-rendering-opt mx-auto "
           />
         </picture>
       </figure>
