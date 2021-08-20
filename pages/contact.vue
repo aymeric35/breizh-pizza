@@ -42,12 +42,9 @@
           Pas encore choisi ? <br />
           Consultez notre menu
         </p>
-        <button
-          type="button"
-          class="rounded-lg font-body mx-auto shadow-md ring text-lg py-2 px-6 ring-green-500 text-green-500 text-gray-50 w-max focus:outline-none"
-        >
-          <NuxtLink to="/menu">Voir le menu</NuxtLink>
-        </button>
+        <SecondaryButton custom-class="mx-auto" label="Voir le menu" destination="/menu">
+          <ButtonIconMenu></ButtonIconMenu>
+        </SecondaryButton>
       </div>
       <TheFooter></TheFooter>
     </section>
