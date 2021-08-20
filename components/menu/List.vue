@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 id="entrées" class="font-heading text-center pt-3 pb-2 text-3xl">Entrées</h2>
+    <h2 id="entrées" class="text-center pt-3 pb-2 title-h2">Entrées</h2>
     <MenuDivider></MenuDivider>
     <div class="pt-6 pb-6 lg:flex lg:justify-between">
       <MenuItem
@@ -14,9 +14,9 @@
         price="6,00€"
       ></MenuItem>
     </div>
-    <h2 id="pizzas" class="font-heading text-center pt-3 pb-2 text-3xl">Pizzas</h2>
+    <h2 id="pizzas" class="text-center pt-3 pb-2 title-h2">Pizzas</h2>
     <MenuDivider></MenuDivider>
-    <div class="pt-6 pb-6 lg:flex lg:justify-between lg:flex-wrap">
+    <div class="pt-6 pb-6 lg:flex lg:flex-wrap lg:justify-between">
       <MenuItem
         title="Margherita"
         ingredients="Tomate, mozzarella, basilic, huile d'olive"
@@ -68,9 +68,9 @@
         price="9,00€"
       ></MenuItem>
     </div>
-    <h2 id="desserts" class="font-heading text-center pt-3 pb-2 text-3xl">Desserts</h2>
+    <h2 id="desserts" class="text-center pt-3 pb-2 title-h2">Desserts</h2>
     <MenuDivider></MenuDivider>
-    <div class="pt-6 pb-6 lg:flex lg:justify-between lg:flex-wrap">
+    <div class="pt-6 pb-6 lg:flex lg:flex-wrap lg:justify-between">
       <MenuItem
         title="Pizza au chocolat"
         ingredients="Chocolat, bananes, fraises, pépites de chocolat blanc"
@@ -82,9 +82,9 @@
         price="6,00€"
       ></MenuItem>
     </div>
-    <h2 id="boissons" class="font-heading text-center pt-3 pb-2 text-3xl">Boissons</h2>
+    <h2 id="boissons" class="text-center pt-3 pb-2 title-h2">Boissons</h2>
     <MenuDivider></MenuDivider>
-    <div class="pt-6 pb-6 lg:flex lg:justify-between lg:flex-wrap">
+    <div class="pt-6 pb-6 lg:flex lg:flex-wrap lg:justify-between">
       <MenuDrink drink="Eau 50cl" price="1,00€"></MenuDrink>
       <MenuDrink drink="Eau 1.5L" price="1,80€"></MenuDrink>
       <MenuDrink drink="Kronembourg (33cl)" price="2,50€"></MenuDrink>
@@ -98,17 +98,17 @@
       <MenuDrink drink="Limonade 50cl" price="1,50€"></MenuDrink>
       <MenuDrink drink="Perrier 50cl" price="1,50€"></MenuDrink>
     </div>
-    <h2 id="vins" class="font-heading text-center pt-3 pb-2 text-3xl">Vins</h2>
+    <h2 id="vins" class="text-center pt-3 pb-2 title-h2">Vins</h2>
     <MenuDivider></MenuDivider>
-    <div class="pt-6 pb-10 lg:flex lg:justify-between lg:flex-wrap">
-      <h3 class="font-heading text-center text-2xl text-orange-500 pb-3 lg:w-full lg:pb-6">Rouges</h3>
+    <div class="pt-6 pb-10 lg:flex lg:flex-wrap lg:justify-between">
+      <h3 class="font-heading text-center pb-3 text-2xl text-orange-500 lg:w-full lg:pb-6">Rouges</h3>
       <MenuDrink drink="Bordeaux 37,5cl" price="8,40€"></MenuDrink>
       <MenuDrink drink="Bordeaux 75cl" price="11,00€"></MenuDrink>
       <MenuDrink drink="Côtes du Rhône 37,5cl" price="8,50€"></MenuDrink>
       <MenuDrink drink="Côtes du Rhône 75cl" price="12,50€"></MenuDrink>
       <MenuDrink drink="Valpolicella 37,5cl" price="7,90€"></MenuDrink>
       <MenuDrink drink="Valpolicella 75cl" price="12,00€"></MenuDrink>
-      <h3 class="font-heading text-center text-2xl text-orange-500 pt-4 pb-3 lg:w-full lg:pb-6">Blancs</h3>
+      <h3 class="font-heading text-center pt-4 pb-3 text-2xl text-orange-500 lg:w-full lg:pb-6">Blancs</h3>
       <MenuDrink drink="Sauvignon 75cl" price="8,50€"></MenuDrink>
       <MenuDrink drink="Champagne" price="28,00€"></MenuDrink>
       <MenuDrink drink="Mousseux" price="15,00€"></MenuDrink>
