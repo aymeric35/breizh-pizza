@@ -1,9 +1,7 @@
 <template>
   <section class="h-full -mt-12 bg-cover bg-body-pattern lg:hidden">
     <div class="container flex flex-col h-full pt-12">
-      <h1
-        class="mt-auto text-4xl text-center text-gray-50 font-heading sm:text-6xl"
-      >
+      <h1 class="title-h1 mt-auto text-center">
         Des pizzas <span class="text-orange-500">artisanales</span>
       </h1>
       <figure class="mt-auto">
@@ -29,9 +27,7 @@
         Découvrez nos pizzas savoureuses cuites au feu de bois et réalisées à
         partir d’ingrédients locaux.
       </p>
-      <div
-        class="w-screen mt-auto relative left-1/2 -ml-[-50vw] flex flex-col"
-      >
+      <div class="w-screen mt-auto relative left-1/2 -ml-[-50vw] flex flex-col">
         <button
           type="button"
           class="py-2 text-lg bg-orange-500 text-gray-50 font-body focus:outline-none"
