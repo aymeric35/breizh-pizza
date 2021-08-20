@@ -29,9 +29,9 @@
         </picture>
       </figure>
       <div
-        class="container flex flex-col h-full py-12 text-gray-50 items-start justify-center sm:py-20 lg:px-20"
+        class="container flex flex-col h-full pt-6 pb-12 text-gray-50 items-start justify-center sm:py-20 lg:px-20"
       >
-        <h2 class="font-heading pb-3 text-3xl">
+        <h2 class="title-h2 pb-3">
           Lorem ipsum <span class="text-orange-500">coge</span>
         </h2>
         <p class="font-body pb-5">
@@ -120,6 +120,18 @@ html {
 body {
   --tw-bg-opacity: 1;
   background-color: rgba(23, 23, 23, var(--tw-bg-opacity));
+}
+
+@layer components {
+  .title-h1 {
+    @apply text-4xl text-gray-50 font-heading sm:text-6xl;
+  }
+  .title-h2 {
+    @apply text-3xl text-gray-50 font-heading;
+  }
+  .title-h3 {
+    @apply text-2xl text-gray-50 font-heading;
+  }
 }
 
 .home-enter-active,
