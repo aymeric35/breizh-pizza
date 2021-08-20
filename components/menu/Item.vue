@@ -1,7 +1,7 @@
 <template>
   <div class="flex pb-4 lg:w-4/10">
     <div class="w-8/10">
-      <h3 class="font-heading text-xl pb-0.5">{{ title }}</h3>
+      <h3 class="title-h3 pb-0.5">{{ title }}</h3>
       <MenuDividerLine></MenuDividerLine>
       <p class="font-body italic text-sm text-gray-200 pt-1 pr-6">{{ ingredients }}</p>
     </div>
