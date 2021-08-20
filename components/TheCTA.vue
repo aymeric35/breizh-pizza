@@ -26,15 +26,3 @@
     </div>
   </section>
 </template>
-
-<script>
-import Chevron from '~/assets/images/buttons/chevron.svg'
-
-export default {
-  data() {
-    return {
-      chevron: Chevron,
-    }
-  }
-}
-</script>
