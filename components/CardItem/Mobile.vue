@@ -23,7 +23,7 @@
       <div
         class="container bg-no-repeat bg-card-gradient bg-pizza-pattern-position rounded-xl shadow-md mt-[40%] py-5 text-gray-50 z-40 relative sm:mt-[55%]"
       >
-        <h2 class="font-font-heading text-2xl">Lorem Ipsum</h2>
+        <h2 class="title-h2 pb-2">Lorem Ipsum</h2>
         <p class="font-body">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
           tincidunt leo quis lacus ultricies sollicitudin. Ut blandit, tortor
