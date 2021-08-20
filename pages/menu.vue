@@ -2,7 +2,7 @@
   <div class="bg-gray-900">
     <TheHeader></TheHeader>
     <section class="container text-gray-50 relative">
-      <h1 class="font-heading text-center py-8 text-3xl">Menu</h1>
+      <h1 class="title-h1 text-center py-8">Menu</h1>
       <figure>
         <picture>
           <source
@@ -33,9 +33,7 @@
       </div>
       <MenuList></MenuList>
     </section>
-    <section>
-      <TheCTA></TheCTA>
-    </section>
+    <TheCTA></TheCTA>
     <TheFooter></TheFooter>
   </div>
 </template>
@@ -82,5 +80,4 @@ export default {
 #stickyMenu.isSticky {
   background-color: #0f0f0f;
 }
-
 </style>
