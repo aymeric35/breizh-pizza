@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-between items-center pb-3 lg:w-4/10">
-    <p class="whitespace-nowrap font-heading text-lg text-left">{{ drink }}</p>
+    <p class="whitespace-nowrap font-heading text-xl text-left">{{ drink }}</p>
 
     <svg
     class="w-full px-4 stroke-gray-50"
@@ -18,7 +18,7 @@
       ></line>
     </svg>
 
-    <p class="font-heading text-lg text-right">{{ price }}</p>
+    <p class="font-heading text-xl text-right">{{ price }}</p>
   </div>
 </template>
 
