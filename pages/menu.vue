@@ -21,7 +21,10 @@
           />
         </picture>
       </figure>
-      <div class="text-center sticky top-0 pt-3 pb-4 overflow-x-scroll whitespace-nowrap sm:flex sm:justify-between sm:overflow-hidden lg:hidden">
+      <div
+        id="stickyMenu"
+        class="container text-center sticky pt-3 pb-4 overflow-x-scroll whitespace-nowrap sm:flex sm:justify-between sm:overflow-hidden lg:hidden"
+      >
         <MenuButton tag="#entrées" message="Entrées"></MenuButton>
         <MenuButton tag="#pizzas" message="Pizzas"></MenuButton>
         <MenuButton tag="#desserts" message="Desserts"></MenuButton>
@@ -53,5 +56,31 @@ export default {
       },
     }
   },
+  mounted() {
+    const stickyElm = document.getElementById('stickyMenu')
+
+    const observer = new IntersectionObserver(
+      ([e]) => e.target.classList.toggle('isSticky', e.intersectionRatio < 1),
+      { threshold: [1] }
+    )
+
+    observer.observe(stickyElm)
+  },
 }
 </script>
+
+<style>
+/* thanks vsync for the trick https://stackoverflow.com/questions/16302483/event-to-detect-when-positionsticky-is-triggered */
+#stickyMenu {
+  top: -1px;
+  padding-top: calc(1em + 1px);
+  width: 100vw;
+  margin-left: calc((100% - 100vw) / 2);
+  transition: 0.3s;
+}
+
+#stickyMenu.isSticky {
+  background-color: #0f0f0f;
+}
+
+</style>
