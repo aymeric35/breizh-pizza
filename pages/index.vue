@@ -6,11 +6,9 @@
       <LandingDesktop></LandingDesktop>
     </vue100vh>
     <section
-      class="bg-gray-900 relative md:flex md:gap-10 md:items-center 2xl:pb-24"
+      class="container py-16 bg-gray-900 relative md:flex md:gap-15 md:items-center"
     >
-      <figure
-        class="container pt-12 md:flex md:max-w-full md:pt-0 md:pr-0 md:pl-0 md:gap-10"
-      >
+      <figure class="md:flex md:w-full">
         <picture>
           <source
             :srcset="pizzaPreparation.ret"
@@ -24,17 +22,17 @@
           />
           <img
             :src="pizzaPreparation.sm"
-            class="rounded-xl shadow-md w-screen image-rendering-opt md:rounded-none md:object-cover md:rounded-br-[5rem] md:mb-20 lg:h-screen xl:object-right-bottom ret:h-7xl"
+            class="rounded-lg shadow-md w-screen image-rendering-opt md:object-cover xl:object-right-bottom xl:h-[80vh]"
           />
         </picture>
       </figure>
       <div
-        class="container flex flex-col h-full pt-6 pb-12 text-gray-50 items-start justify-center sm:py-20 lg:px-20"
+        class="flex flex-col h-full pt-6 md:pt-0 text-gray-50 items-start justify-center md:w-full"
       >
-        <h2 class="title-h2 pb-3">
+        <h2 class="title-h2 pb-3 lg:pb-5">
           Lorem ipsum <span class="text-orange-500">coge</span>
         </h2>
-        <p class="font-body pb-5">
+        <p class="font-body pb-5 lg:pb-6 2xl:w-max-[35vw]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
           tincidunt leo quis lacus ultricies sollicitudin. Ut blandit, tortor
           nec pulvinar aliquam, velit est sollicitudin metus, laoreet rutrum est
@@ -127,16 +125,16 @@ body {
     @apply text-4xl text-gray-50 font-heading sm:text-6xl;
   }
   .title-h2 {
-    @apply text-3xl text-gray-50 font-heading;
+    @apply text-3xl text-gray-50 font-heading sm:text-5xl;
   }
   .title-h3 {
-    @apply text-2xl text-gray-50 font-heading;
+    @apply text-2xl text-gray-50 font-heading sm:text-3xl;
   }
 }
 
 .home-enter-active,
 .home-leave-active {
-  transition: all 0.4s ease;
+  transition: all 0.6s ease;
 }
 
 .home-enter,
