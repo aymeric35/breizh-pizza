@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h2 id="entrées" class="text-center pt-3 pb-2 title-h2">Entrées</h2>
+    <MenuTitle custom-i-d="entrées" content="Entrées"></MenuTitle>
     <MenuDivider></MenuDivider>
-    <div class="pt-6 pb-6 lg:flex lg:justify-between">
+    <div class="pt-10 pb-6 lg:flex lg:justify-between">
       <MenuItem
         title="Salade Californienne"
         ingredients="Salade verte, pommes, oignons, tomate"
@@ -14,9 +14,9 @@
         price="6,00€"
       ></MenuItem>
     </div>
-    <h2 id="pizzas" class="text-center pt-3 pb-2 title-h2">Pizzas</h2>
+    <MenuTitle custom-i-d="pizzas" custom-class="md:pb-4" content="Pizzas"></MenuTitle>
     <MenuDivider></MenuDivider>
-    <div class="pt-6 pb-6 lg:flex lg:flex-wrap lg:justify-between">
+    <div class="pt-10 pb-6 lg:flex lg:flex-wrap lg:justify-between">
       <MenuItem
         title="Margherita"
         ingredients="Tomate, mozzarella, basilic, huile d'olive"
@@ -68,9 +68,9 @@
         price="9,00€"
       ></MenuItem>
     </div>
-    <h2 id="desserts" class="text-center pt-3 pb-2 title-h2">Desserts</h2>
+    <MenuTitle custom-i-d="desserts" content="Desserts"></MenuTitle>
     <MenuDivider></MenuDivider>
-    <div class="pt-6 pb-6 lg:flex lg:flex-wrap lg:justify-between">
+    <div class="pt-10 pb-6 lg:flex lg:flex-wrap lg:justify-between">
       <MenuItem
         title="Pizza au chocolat"
         ingredients="Chocolat, bananes, fraises, pépites de chocolat blanc"
@@ -82,39 +82,51 @@
         price="6,00€"
       ></MenuItem>
     </div>
-    <h2 id="boissons" class="text-center pt-3 pb-2 title-h2">Boissons</h2>
+    <MenuTitle custom-i-d="boissons" content="Boissons"></MenuTitle>
     <MenuDivider></MenuDivider>
-    <div class="pt-6 pb-6 lg:flex lg:flex-wrap lg:justify-between">
-      <MenuDrink drink="Eau 50cl" price="1,00€"></MenuDrink>
-      <MenuDrink drink="Eau 1.5L" price="1,80€"></MenuDrink>
-      <MenuDrink drink="Kronembourg (33cl)" price="2,50€"></MenuDrink>
-      <MenuDrink drink="1664 (33cl)" price="2,70€"></MenuDrink>
-      <MenuDrink drink="Heineken (33cl)" price="2,60€"></MenuDrink>
-      <MenuDrink drink="Guinness (33cl)" price="2,90€"></MenuDrink>
-      <MenuDrink drink="Coca 50cl" price="1,50€"></MenuDrink>
-      <MenuDrink drink="Orangina 50cl" price="1,50€"></MenuDrink>
-      <MenuDrink drink="Fanta 50cl" price="1,50€"></MenuDrink>
-      <MenuDrink drink="Icea Tea 50cl" price="1,50€"></MenuDrink>
-      <MenuDrink drink="Limonade 50cl" price="1,50€"></MenuDrink>
-      <MenuDrink drink="Perrier 50cl" price="1,50€"></MenuDrink>
+    <div class="pt-10 pb-6 lg:flex lg:flex-wrap lg:justify-between">
+      <MenuDrink custom-class="lg:w-4/10" drink="Eau 50cl" price="1,00€"></MenuDrink>
+      <MenuDrink custom-class="lg:w-4/10" drink="Eau 1.5L" price="1,80€"></MenuDrink>
+      <MenuDrink custom-class="lg:w-4/10" drink="Kronembourg (33cl)" price="2,50€"></MenuDrink>
+      <MenuDrink custom-class="lg:w-4/10" drink="1664 (33cl)" price="2,70€"></MenuDrink>
+      <MenuDrink custom-class="lg:w-4/10" drink="Heineken (33cl)" price="2,60€"></MenuDrink>
+      <MenuDrink custom-class="lg:w-4/10" drink="Guinness (33cl)" price="2,90€"></MenuDrink>
+      <MenuDrink custom-class="lg:w-4/10" drink="Coca 50cl" price="1,50€"></MenuDrink>
+      <MenuDrink custom-class="lg:w-4/10" drink="Orangina 50cl" price="1,50€"></MenuDrink>
+      <MenuDrink custom-class="lg:w-4/10" drink="Fanta 50cl" price="1,50€"></MenuDrink>
+      <MenuDrink custom-class="lg:w-4/10" drink="Icea Tea 50cl" price="1,50€"></MenuDrink>
+      <MenuDrink custom-class="lg:w-4/10" drink="Limonade 50cl" price="1,50€"></MenuDrink>
+      <MenuDrink custom-class="lg:w-4/10" drink="Perrier 50cl" price="1,50€"></MenuDrink>
     </div>
-    <h2 id="vins" class="text-center pt-3 pb-2 title-h2">Vins</h2>
+    <MenuTitle custom-i-d="vins" content="Vins"></MenuTitle>
     <MenuDivider></MenuDivider>
-    <div class="pt-6 pb-10 lg:flex lg:flex-wrap lg:justify-between">
-      <h3 class="font-heading text-center pb-3 text-2xl text-orange-500 lg:w-full lg:pb-6">Rouges</h3>
-      <MenuDrink drink="Bordeaux 37,5cl" price="8,40€"></MenuDrink>
-      <MenuDrink drink="Bordeaux 75cl" price="11,00€"></MenuDrink>
-      <MenuDrink drink="Côtes du Rhône 37,5cl" price="8,50€"></MenuDrink>
-      <MenuDrink drink="Côtes du Rhône 75cl" price="12,50€"></MenuDrink>
-      <MenuDrink drink="Valpolicella 37,5cl" price="7,90€"></MenuDrink>
-      <MenuDrink drink="Valpolicella 75cl" price="12,00€"></MenuDrink>
-      <h3 class="font-heading text-center pt-4 pb-3 text-2xl text-orange-500 lg:w-full lg:pb-6">Blancs</h3>
-      <MenuDrink drink="Sauvignon 75cl" price="8,50€"></MenuDrink>
-      <MenuDrink drink="Champagne" price="28,00€"></MenuDrink>
-      <MenuDrink drink="Mousseux" price="15,00€"></MenuDrink>
-      <MenuDrink drink="Cidre" price="7,00€"></MenuDrink>
-      <MenuDrink drink="Pinot blanc 37,5cl" price="7,90€"></MenuDrink>
-      <MenuDrink drink="Pinot blanc 75cl" price="11,50€"></MenuDrink>
+    <div class="pt-10 pb-10 lg:flex lg:justify-between">
+      <div class="lg:flex lg:flex-col lg:w-4/10">
+        <h3
+          class="font-heading text-center pb-3 text-2xl text-orange-500 lg:pb-6"
+        >
+          Rouges
+        </h3>
+        <MenuDrink custom-class="lg:w-full" drink="Bordeaux 37,5cl" price="8,40€"></MenuDrink>
+        <MenuDrink custom-class="lg:w-full" drink="Bordeaux 75cl" price="11,00€"></MenuDrink>
+        <MenuDrink custom-class="lg:w-full" drink="Côtes du Rhône 37,5cl" price="8,50€"></MenuDrink>
+        <MenuDrink custom-class="lg:w-full" drink="Côtes du Rhône 75cl" price="12,50€"></MenuDrink>
+        <MenuDrink custom-class="lg:w-full" drink="Valpolicella 37,5cl" price="7,90€"></MenuDrink>
+        <MenuDrink custom-class="lg:w-full" drink="Valpolicella 75cl" price="12,00€"></MenuDrink>
+      </div>
+      <div class="lg:flex lg:flex-col lg:w-4/10">
+        <h3
+          class="font-heading text-center pb-3 text-2xl text-orange-500 lg:pb-6"
+        >
+          Blancs
+        </h3>
+        <MenuDrink custom-class="lg:w-full" drink="Sauvignon 75cl" price="8,50€"></MenuDrink>
+        <MenuDrink custom-class="lg:w-full" drink="Champagne" price="28,00€"></MenuDrink>
+        <MenuDrink custom-class="lg:w-full" drink="Mousseux" price="15,00€"></MenuDrink>
+        <MenuDrink custom-class="lg:w-full" drink="Cidre" price="7,00€"></MenuDrink>
+        <MenuDrink custom-class="lg:w-full" drink="Pinot blanc 37,5cl" price="7,90€"></MenuDrink>
+        <MenuDrink custom-class="lg:w-full" drink="Pinot blanc 75cl" price="11,50€"></MenuDrink>
+      </div>
     </div>
   </div>
 </template>
