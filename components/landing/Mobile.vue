@@ -28,18 +28,20 @@
         partir d’ingrédients locaux.
       </p>
       <div class="w-screen mt-auto relative left-1/2 -ml-[-50vw] flex flex-col">
-        <button
+        <NuxtLink
+          to="/contact"
           type="button"
-          class="py-2 text-lg bg-orange-500 text-gray-50 font-body focus:outline-none"
+          class="py-2 text-lg bg-orange-500 text-gray-50 font-body text-center focus:outline-none"
         >
-          <NuxtLink to="/contact">Commander</NuxtLink>
-        </button>
-        <button
+          Commander
+        </NuxtLink>
+        <NuxtLink
+          to="/contact"
           type="button"
-          class="py-2 text-lg bg-green-500 text-gray-50 font-body focus:outline-none"
+          class="py-2 text-lg bg-green-500 text-gray-50 font-body text-center focus:outline-none"
         >
-          <NuxtLink to="/contact">Réserver</NuxtLink>
-        </button>
+          Réserver
+        </NuxtLink>
       </div>
     </div>
   </section>
