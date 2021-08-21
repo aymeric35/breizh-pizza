@@ -1,8 +1,8 @@
 <template>
   <div class="bg-gray-900">
     <TheHeader></TheHeader>
-    <section class="container text-gray-50 relative">
-      <h1 class="title-h1 text-center py-8">Menu</h1>
+    <section class="container text-gray-50 relative lg:pb-20">
+      <h1 class="title-h1 text-center py-8 lg:py-15">Menu</h1>
       <figure>
         <picture>
           <source
