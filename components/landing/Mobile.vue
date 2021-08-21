@@ -19,7 +19,7 @@
           <source :srcset="webp.pizza.sm" type="image/webp" />
           <img
             :src="png.pizza.sm"
-            class="w-full mx-auto x-sm:w-8/10 sm:w-1/2 image-rendering-opt"
+            class="w-full mx-auto x-sm:w-8/10 sm:w-1/2 image-rendering-opt filter drop-shadow-xl"
           />
         </picture>
       </figure>

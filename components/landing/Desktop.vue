@@ -5,7 +5,7 @@
     <div
       class="container flex items-center justify-center h-full pt-12 space-x-30"
     >
-      <div class="w-1/2 space-y-3">
+      <div class="w-1/2 space-y-6">
         <h1 class="text-4xl text-6xl text-gray-50 font-heading">
           Des pizzas <span class="text-orange-500">artisanales</span>
         </h1>
@@ -35,7 +35,7 @@
             type="image/png"
           />
           <source :srcset="webp.pizza.lg" type="image/webp" />
-          <img :src="png.pizza.lg" class="w-full image-rendering-opt" />
+          <img :src="png.pizza.lg" class="w-full filter drop-shadow-xl image-rendering-opt" />
         </picture>
       </figure>
     </div>
