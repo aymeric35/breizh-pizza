@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between items-center pb-3 lg:w-4/10">
+  <div :class="customClass" class="flex justify-between items-center pb-3">
     <p class="whitespace-nowrap font-heading text-xl text-left">{{ drink }}</p>
 
     <svg
@@ -32,6 +32,10 @@ export default {
     price: {
       type: String,
       required: true,
+    },
+    customClass: {
+      type: String,
+      default: '',
     },
   },
 }
