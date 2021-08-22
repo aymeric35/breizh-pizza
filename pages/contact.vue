@@ -1,6 +1,5 @@
 <template>
   <div class="bg-gray-900">
-    <TheHeader></TheHeader>
     <section>
       <div class="container flex flex-col py-8 justify-center">
         <h1 class="title-h1 text-center py-8 lg:py-15">Contact</h1>
