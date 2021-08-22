@@ -1,5 +1,5 @@
 <template>
-  <section class="h-full -mt-12 bg-cover bg-body-pattern lg:hidden">
+  <section class="h-full -mt-16 bg-cover bg-body-pattern lg:hidden">
     <div class="container flex flex-col h-full pt-12">
       <h1 class="title-h1 mt-auto text-center">
         Des pizzas <span class="text-orange-500">artisanales</span>

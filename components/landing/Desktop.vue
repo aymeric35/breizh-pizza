@@ -1,6 +1,6 @@
 <template>
   <section
-    class="hidden h-full -mt-16 bg-cover lg:block bg-body-pattern-2x xl:-mt-24"
+    class="hidden h-full -mt-16 lg:-mt-20 bg-cover lg:block bg-body-pattern-2x xl:-mt-24"
   >
     <div
       class="container flex items-center justify-center h-full pt-12 space-x-30"
