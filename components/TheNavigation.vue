@@ -6,17 +6,17 @@
       <ul
         class="text-4xl text-center space-y-15 font-heading lg:space-y-0 lg:flex lg:flex-row lg:justify-around lg:items-center lg:space-x-10 lg:font-body lg:text-xl lg:space-x-15 lg:text-2xl xl:space-x-20"
       >
-        <li><NuxtLink to="/" @click.native="clearScroll">Accueil</NuxtLink></li>
+        <li><NuxtLink to="/" @click.native="closeMenu">Accueil</NuxtLink></li>
         <li>
-          <NuxtLink to="/menu" @click.native="clearScroll">Menu</NuxtLink>
+          <NuxtLink to="/menu" @click.native="closeMenu">Menu</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/contact" @click.native="clearScroll">Contact</NuxtLink>
+          <NuxtLink to="/contact" @click.native="closeMenu">Contact</NuxtLink>
         </li>
         <li
           class="hidden lg:px-5 lg:py-0.5 lg:block lg:bg-orange-500 lg:rounded-full lg:hover:bg-orange-600 lg:transition-colors lg:duration-300"
         >
-          <NuxtLink id="contact" to="/contact" @click.native="clearScroll"
+          <NuxtLink id="contact" to="/contact" @click.native="closeMenu"
             >Commander</NuxtLink
           >
         </li>
@@ -30,8 +30,11 @@ import { clearAllBodyScrollLocks } from 'body-scroll-lock'
 
 export default {
   methods: {
-    clearScroll() {
-      clearAllBodyScrollLocks()
+    closeMenu() {
+      if (window.matchMedia('(max-width: 1023px)').matches) {
+        clearAllBodyScrollLocks()
+        this.$emit('custom')
+      }
     },
   },
 }

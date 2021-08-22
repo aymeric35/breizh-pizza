@@ -1,8 +1,13 @@
 <template>
   <header>
-    <div class="container z-10 flex items-center justify-between h-12 lg:h-16 xl:h-24">
-      <h1>
-        <NuxtLink to="/" class="text-2xl text-gray-50 font-heading sm:text-3xl lg:text-5xl">
+    <div
+      class="container z-10 flex items-center justify-between h-16 lg:h-20 xl:h-24"
+    >
+      <h1 class="z-40">
+        <NuxtLink
+          to="/"
+          class="text-2xl text-gray-50 font-heading sm:text-3xl lg:text-5xl"
+        >
           Breizh Pizza
         </NuxtLink>
       </h1>
@@ -17,7 +22,11 @@
           <span class="sr-only">Ouvrir le menu</span>
         </span>
       </button>
-        <TheNavigation data-nav-menu="bodyScrollLock" :class="open ? 'block' : 'hidden'"></TheNavigation>
+      <TheNavigation
+        data-nav-menu="bodyScrollLock"
+        :class="open ? 'block' : 'hidden'"
+        @custom="toggle"
+      ></TheNavigation>
     </div>
   </header>
 </template>
@@ -36,9 +45,9 @@ export default {
     toggle() {
       this.active = !this.active
       this.open = !this.open
-      const menu = document.querySelector('[data-nav-menu="bodyScrollLock"]');
+      const menu = document.querySelector('[data-nav-menu="bodyScrollLock"]')
       if (this.open === true) {
-        disableBodyScroll(menu);
+        disableBodyScroll(menu)
       } else if (this.open === false) {
         enableBodyScroll(menu)
       }
