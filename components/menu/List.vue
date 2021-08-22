@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <MenuTitle custom-i-d="entrées" content="Entrées"></MenuTitle>
     <MenuDivider></MenuDivider>
     <div class="pt-10 pb-6 lg:flex lg:justify-between">
