@@ -1,9 +1,8 @@
 <template>
   <div class="bg-gray-900">
-    <TheHeader></TheHeader>
-    <section class="container text-gray-50 relative lg:pb-20">
-      <h1 class="title-h1 text-center py-8 lg:py-15">Menu</h1>
-      <figure>
+    <section class="text-gray-50 relative lg:pb-20">
+      <h1 class="container title-h1 text-center py-8 lg:py-15">Menu</h1>
+      <figure class="container">
         <picture>
           <source
             :srcset="menu.ret"
@@ -17,19 +16,21 @@
           />
           <img
             :src="menu.sm"
-            class="rounded-xl object-cover object-bottom h-30 shadow-md w-screen image-rendering-opt lg:h-[40vh] 2xl:h-[60vh]"
+            class="rounded-xl object-cover object-bottom h-[30vh] shadow-md w-screen image-rendering-opt lg:h-[40vh] 2xl:h-[60vh]"
           />
         </picture>
       </figure>
       <div
         id="stickyMenu"
-        class="container text-center sticky pt-3 pb-4 overflow-x-scroll whitespace-nowrap sm:flex sm:justify-between sm:overflow-hidden lg:hidden"
+        class="text-center sticky pb-4 overflow-x-scroll sm:overflow-hidden lg:hidden"
       >
+      <div class="container whitespace-nowrap flex justify-between gap-3">
         <MenuButton tag="#entrées" message="Entrées"></MenuButton>
         <MenuButton tag="#pizzas" message="Pizzas"></MenuButton>
         <MenuButton tag="#desserts" message="Desserts"></MenuButton>
         <MenuButton tag="#boissons" message="Boissons"></MenuButton>
         <MenuButton tag="#vins" message="Vins"></MenuButton>
+        </div>
       </div>
       <MenuList></MenuList>
     </section>
@@ -72,12 +73,14 @@ export default {
 #stickyMenu {
   top: -1px;
   padding-top: calc(1em + 1px);
-  width: 100vw;
-  margin-left: calc((100% - 100vw) / 2);
   transition: 0.3s;
 }
 
 #stickyMenu.isSticky {
   background-color: #0f0f0f;
+}
+
+html {
+  scroll-padding-top: 3rem;
 }
 </style>
