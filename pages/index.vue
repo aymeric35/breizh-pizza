@@ -1,6 +1,5 @@
 <template>
   <div>
-    <TheHeader></TheHeader>
     <vue100vh>
       <LandingMobile></LandingMobile>
       <LandingDesktop></LandingDesktop>
@@ -135,6 +134,7 @@ body {
 .home-enter-active,
 .home-leave-active {
   transition: all 0.6s ease;
+  transition-delay: 200ms;
 }
 
 .home-enter,
@@ -143,9 +143,10 @@ body {
   transform: translateX(-100%);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .home-enter,
   .home-leave-active {
+    transition-delay: 0ms;
     opacity: 0;
     transform: scale(0.9);
   }
