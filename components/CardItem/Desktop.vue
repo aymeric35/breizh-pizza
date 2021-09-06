@@ -33,7 +33,7 @@
         </picture>
       </figure>
     </div>
-    <div class="container pt-80">
+    <div class="container pt-40">
       <figure class="mr-auto w-1/2 static">
         <picture>
           <source
