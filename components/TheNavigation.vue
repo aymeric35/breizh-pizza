@@ -25,7 +25,7 @@
   </div>
 </template>
 
-// <script>
+<script>
 import { clearAllBodyScrollLocks } from 'body-scroll-lock'
 
 export default {
