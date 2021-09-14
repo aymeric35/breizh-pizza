@@ -1,18 +1,18 @@
 <template>
   <header>
     <div
-      class="container z-10 flex items-center justify-between h-16 lg:h-20 xl:h-24"
+      class="container flex bg-gray-900 h-16 z-10 items-center justify-between lg:h-20 xl:h-24"
     >
       <h1 class="z-40">
         <NuxtLink
           to="/"
-          class="text-2xl text-gray-50 font-heading sm:text-3xl lg:text-5xl"
+          class="font-heading text-2xl text-gray-50 sm:text-3xl lg:text-5xl"
         >
           Breizh Pizza
         </NuxtLink>
       </h1>
       <button
-        class="!lg:hidden hamburger hamburger--spin focus:outline-none z-50"
+        class="z-50 hamburger hamburger--spin !lg:hidden focus:outline-none"
         type="button"
         :class="{ active }"
         @click="toggle"
