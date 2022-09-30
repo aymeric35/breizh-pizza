@@ -67,7 +67,6 @@
       ></CardItemDesktop>
     </MatchMedia>
     <TheCTA></TheCTA>
-    <TheFooter></TheFooter>
   </div>
 </template>
 

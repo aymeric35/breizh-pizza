@@ -35,7 +35,6 @@
       <MenuList></MenuList>
     </section>
     <TheCTA></TheCTA>
-    <TheFooter></TheFooter>
   </div>
 </template>
 
