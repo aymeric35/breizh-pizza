@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-orange-900">
+  <div class="bg-orange-900 -mt-16 lg:-mt-20 xl:-mt-24">
     <vue100vh>
       <div class="container flex flex-col h-screen items-center justify-center">
         <h1 class="font-heading text-center text-4xl">Attributions</h1>
