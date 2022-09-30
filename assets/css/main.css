@@ -7,6 +7,12 @@ body {
   background-color: rgba(23, 23, 23, var(--tw-bg-opacity));
 }
 
+@media (min-width: 2000px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 @layer components {
   .title-h1 {
     @apply text-4xl text-gray-50 font-heading sm:text-6xl;
